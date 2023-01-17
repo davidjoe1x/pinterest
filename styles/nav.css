@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 10px;
+}
+.nav > li:hover{
+    color: red;
+}
+.nav > li{
+    list-style: none;
+    cursor: pointer;
+    padding: 1%;
+}
+
+.nav > li:nth-child(2){
+    font-weight: 600;
+
+    
+}
+.nav > li:nth-child(3){
+    font-weight: 600;       
+}
+
+.nav > li:nth-child(6){
+    font-size: 20px;
+    color: gray; 
+
+}
+.nav > li:nth-child(6):hover{
+    color: red;
+}
+.search{   
+    width: 70%;
+    position: relative;
+    padding: 1%;
+    
+}
+.search > input{
+    
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: -5px;
+    padding: 1%;
+    background-color: rgba(128, 128, 128, 0.212);
+    
+}
+.search > input:focus{
+    outline: none;
+}
+
+
+.notification i{
+    font-size: 20px;
+    
+    color: gray;
+    margin-top: 5px;
+
+}
+.notification i:hover{
+    color: rgba(0, 17, 255, 0.733);
+}
+
+
+.profile img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
