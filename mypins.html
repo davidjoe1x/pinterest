@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest - Ваши пины</title>
+    <link rel="stylesheet" href="./styles/pin_styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="nav">
+        <li><img class="logo" src="logo.png" alt="logo"></li>
+        <li>Домой</li>
+        <li>Лента</li>
+        <li class="search"><input type="search" placeholder="Что ищем?"></li>
+        
+        <li class="profile"><img src="user.png" alt="profile"></li>
+    </div>
+
+    <div class="navigation_bar">
+        <div class="pint_mock_icon_container add_pin">
+            <img src="./images/add.png" alt="add_pin" class="pint_mock_icon">
+        </div>
+    </div>
+
+    <div class="pin_container"></div>
+
+    <div class="add_pin_modal">
+        <div class="add_pin_container">
+            <div class="side" id="left_side">
+                <div class="section1">
+                    <div class="pint_mock_icon_container">
+                        <img src="./images/ellipse.png" alt="edit" class="pint_mock_icon">
+                    </div>
+                </div>
+
+                <div class="section2">
+                    <label for="upload_img" id="upload_img_label">
+                        <div class="upload_img_container">
+                            <div id="dotted_border">
+                                <div class="pint_mock_icon_container">
+                                    <img src="./images/up-arrow.png" alt="upload_img" class="pint_mock_icon">
+                                </div>
+                                <div>Нажмите для загрузки</div>
+                                <div>Используйте файлы изображений</div>
+                            </div>
+                        </div>
+                        <input type="file" name="upload_img" id="upload_img">
+                    </label>
+
+                    <div class="modals_pin">
+                        <div class="pin_image">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section3">
+                    <div class="save_from_site">Сохранить себе</div>
+                </div>
+            </div>
+
+            <div class="side" id="right_side">
+                <div class="section1">
+                    <div class="select_size">
+                        <select name="pin_size" id="pin_size">
+                            <option value="" disabled selected>Выбрать размер</option>
+                            <option value="small">Маленький</option>
+                            <option value="medium">Средний</option>
+                            <option value="large">Большой</option>
+                        </select>
+                        <div class="save_pin">Добавить</div>
+                    </div>
+                </div>
+
+                <div class="section2">
+                    <input placeholder="Название пина" type="text" class="new_pin_input" id="pin_title">
+                    <input placeholder="Описание пина" type="text" class="new_pin_input" id="pin_description">
+                    <input placeholder="Ссылка на автора" type="text" class="new_pin_input" id="pin_destination">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/final_board.js"></script>
+</body>
+
+</html>
