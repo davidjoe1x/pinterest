@@ -140,3 +140,4 @@ function reset_modal() {
     document.querySelector('#pin_size').value = '';
     pin_image_blob = null;
 }
+
