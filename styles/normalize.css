@@ -4,6 +4,7 @@ body {
     width: 100vw;
     height: 100vh;
 
+
 }
 
 body,
@@ -11,4 +12,20 @@ div {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+ul,li {
+    list-style-type: none;
+}
+
+input {
+
+    border: 0;
+    width: 100%;
+    max-width: 550px;
+    height: 20px;
+    border-radius: 20px;
+    margin-top: -5px;
+    padding: 1%;
+    background-color: rgba(128, 128, 128, 0.212);
 }

@@ -61,7 +61,7 @@ document.querySelector('.save_pin').addEventListener('click', () => {
         description: document.querySelector('#pin_description').value,
         destination: document.querySelector('#pin_destination').value,
         img_blob: pin_image_blob,
-        pin_size: document.querySelector('#pin_size').value
+        pin_size: document.querySelector('#pin_size').value,
     }
 
     create_pin(users_data);
@@ -107,6 +107,7 @@ function create_pin(pin_details) {
 
 <div class="pin_image">
 </div>`;
+
 
         document.querySelector('.pin_container').appendChild(new_pin);
         new_pin.children[2].appendChild(new_image);

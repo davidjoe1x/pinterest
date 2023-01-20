@@ -12,14 +12,20 @@
   height: 10%;
   position: fixed;
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
 }
+
+
 
 .navigation_bar .add_pin {
   width: 40px;
   height: 40px;
   position: relative;
   top: 25%;
-  left: 94%;
+
 
   transition-duration: 0.3s;
 }
@@ -36,9 +42,8 @@
 }
 
 .pin_container {
-  margin: 0;
-  padding: 0;
- 
+  margin-top: 80px;
+  padding: 0px 30px;
   display: grid;
   grid-template-columns: repeat(auto-fill, var(--card_width));
   grid-auto-rows: var(--row_increment);
@@ -63,4 +68,9 @@
 
 .card_large {
   grid-row-end: span var(--card_large);
+}
+
+.logo {
+  max-width: 40px;
+  max-height: 40px;
 }
